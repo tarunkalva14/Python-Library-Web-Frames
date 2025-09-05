@@ -1,12 +1,12 @@
-# BigMart Sales Analysis with PySpark
+# PySpark With Python
 
-This project explores the **BigMart Sales dataset** using **PySpark** in **Google Colab**.  
+This project explores the **BigMart Sales dataset**,**test1 dataset**,**tips dataset** using **PySpark** in **Google Colab**.  
 The main objective is to clean, transform, and analyze the data to extract useful insights about sales patterns and product performance.
 
 ---
 
 ## 🚀 Project Overview
-- **Dataset**: `BigMart Sales.csv`  
+- **Dataset**: `BigMart Sales.csv`,'test1.csv','tips.csv'
 - **Environment**: Google Colab (PySpark)  
 - **Goal**: Perform exploratory data analysis (EDA), handle missing values, and prepare the dataset for potential predictive modeling.
 
@@ -18,7 +18,7 @@ The main objective is to clean, transform, and analyze the data to extract usefu
    - Mount Google Drive to access dataset.
 
 2. **Data Loading**
-   - Read `BigMart Sales.csv` into a PySpark DataFrame.
+   - Read `BigMart Sales.csv`,'test1.csv','tips.csv' into a PySpark DataFrame.
    - Inspect schema and column types.
 
 3. **Data Cleaning**
@@ -55,7 +55,9 @@ The main objective is to clean, transform, and analyze the data to extract usefu
 ## ▶️ How to Run
 1. Open Google Colab.
 2. Upload or connect your Google Drive with `BigMart Sales.csv`.
-3. Run the notebook cells step by step.
+3. Upload or connect your Google Drive with `test1.csv`.
+4. Upload or connect your Google Drive with `tips.csv`.
+5. Run the notebook cells step by step.
    ```python
    from google.colab import drive
    drive.mount('/content/drive')
