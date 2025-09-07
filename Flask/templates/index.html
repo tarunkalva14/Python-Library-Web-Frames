@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/style.css') }}">
+<script>
+alert("This page has been loaded successfully")
+</script>
+</head>
+<body>
+<h1> HTML FORMS</h1>
+<form action ="/submit" method="post">
+<lable for="Science">Science:</lable><br>
+<input type="text" id="science" name="science" value="0"><br>
+<lable for="Maths">Maths:</lable><br>
+<input type="text" id="maths" name="maths" value="0"><br><br>
+<lable for="C">C:</lable><br>
+<input type="text" id="c" name="c" value="0"><br><br>
+<lable for="DataScience">DataScience:</lable><br>
+<input type="text" id="datascience" name="datascience" value="0"><br><br>
+<input type="submit" Value="Submit">
+</form>
+<p>If you hit **Submit** the form-data will retrive the data for you.
+    Thank you!!
+</p>
+</body>
+</html>
