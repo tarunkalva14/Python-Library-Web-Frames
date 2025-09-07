@@ -1,7 +1,26 @@
-### Integrate HTML With Flask
-### HTTP Verb Get And Post
-
-### Jinja2 template engine
+'''
+Description of Flask App
+This app demonstrates key Flask features:
+Home (/)
+Renders index.html (a homepage with probably a form for entering marks).
+Success (/success/<int:score>)
+Shows result message depending on score (>=50 → success, <50 → fail).
+Uses Jinja2 templates and passes data as a dictionary ({'score':..., 'res':...}) into result.html.
+Fail (/fail/<int:score>)
+Simple text message (not templated yet).
+==============================================================================================                     
+Results (/results/<int:marks>)
+Logic-based redirect:
+If marks < 50 → redirect to /fail/<marks>
+Else → redirect to /success/<marks>
+Submit (/submit) [GET & POST]
+Handles form submission from index.html.
+Expects form fields: science, maths, c, datascience.
+Calculates the average of 4 subjects → redirects to /success/<score>.
+Templates (index.html, result.html)
+Uses Jinja2 to dynamically render messages.
+##It’s a Student Result Web App built with Flask + HTML + Jinja2 templates.'''
+=============================================================================================
 from flask import Flask,redirect,url_for,render_template,request
 app=Flask(__name__)
 
@@ -43,4 +62,5 @@ def submit():
     res=""
     return redirect(url_for('success',score=total_score))
 if __name__=='__main__':
+
     app.run(debug=True)
