@@ -30,23 +30,6 @@ It includes end-to-end projects demonstrating skills in **data processing (panda
 
 -------------------------------------------------------------------------------------------------------------------------
 
-## ⚙️ Installation & Setup  
-
-### 1. Create and activate a virtual environment  
-
-```bash
-python -m venv venv
-source venv/bin/activate   # Linux/Mac
-venv\Scripts\activate      # Windows
-
-### 2.Install dependencies
-pip install -r requirements.txt
-
-### 3. Run a project (example Flask API)
-cd web_projects/flask_api
-python app.py
-
----------------------------------------------------------------------------------------------------------------------------------------
 
 ## 🛠️ Tech Stack  
 
